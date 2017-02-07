@@ -5,7 +5,8 @@ MAINTAINER Caocao <martin.mengdj@gmail.com>
 
 RUN \
  DEBIAN_FRONTEND=noninteractive apt-get update && \
- DEBIAN_FRONTEND=noninteractive apt-get -y install lrzsz unzip
+ DEBIAN_FRONTEND=noninteractive apt-get -y install lrzsz unzip && \
+ DEBIAN_FRONTEND=noninteractive apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ADD ./ /app
 WORKDIR /app
