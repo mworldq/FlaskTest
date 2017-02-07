@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 80
 
-CMD ["/usr/bin/python","app.py&"]
+CMD ["run_app.sh"]
