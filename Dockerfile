@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 80
 
-CMD ["run_app.sh"]
+CMD ["bash", "run_app.sh"]
