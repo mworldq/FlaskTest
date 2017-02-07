@@ -13,6 +13,6 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-EXPOSE 80 8888
+EXPOSE 80
 
-CMD ["python","app.py"]
+CMD ["/usr/bin/python","app.py&"]

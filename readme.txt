@@ -1,8 +1,7 @@
-#docker base:
-#https://hub.docker.com/r/jazzdd/alpine-flask/
+1. Start docker container:
+docker run -p 80:80 -t -i dejunmeng/flasktest bash
 
-＃pip -i http://pypi.douban.com/simple install tensorflow
+PS: CMD is not working.
 
-＃apk add --update make cmake gcc g++
-
-＃pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp27-none-linux_x86_64.whl
+2. Enter Container:
+python app.py
