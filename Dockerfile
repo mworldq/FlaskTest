@@ -11,9 +11,10 @@ RUN \
 ADD ./ /app
 WORKDIR /app
 
+RUN chmod 755 run_app.sh
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 EXPOSE 80
 
-CMD ["bash", "run_app.sh"]
+CMD ["run_app.sh"]
